@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0.min.js"></script>
+
+  
+
+
+  
+  
+</head>
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 17px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 17px;
+    padding: 8px 3px 8px 3px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+	position: fixed;
+	top: -11px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+	color: #F6B02E;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #F6B02E;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 17px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+	
+	
+	phr {
+		color:#918e8f;
+		font-size:17px;
+
+	}
+
+	pnt {
+		color:black;
+		font-size:14px;
+		font-style: italic;
+	}
+
+</style>
+<style>
+    @font-face{;
+        font-family:"me_quran";
+        src:url("css/fonts/me_quran.ttf")
+    }
+    
+	 @font-face{;
+        font-family:"LPMQ_IsepMisbah";
+        src:url("LPMQ_IsepMisbah.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"Traditional Arabic";
+        src:url("font.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"KFGQPC Uthman Taha Naskh Bold";
+        src:url("fonts.ttf")
+    }
+	
+	
+    .arab{font-family:me_quran; }
+    </style> 
+<body>
+
+<div data-role="page" id="eps1" data-theme="d">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="c">
+		</div><div data-role="content"><div id="t">
+		
+
+<header>
+
+<h1>Fasal:<br/>Mustahiq Zakat</h1><br/><br/>
+
+
+	
+
+
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+
+
+
+فصل: وتدفع الزكاة إلى الأصناف الثمانية الذين ذكرهم الله تعالى في كتابه العزيز في قوله تعالى {إِنَّما الصَّدَقَاتُ للْفُقَرَاءِ وِالمسَاكِينِ وَالعَامِلِينَ عَلَيْها وَالمؤَلَّفةِ قُلُوبُهمْ وَفي الرِّقابِ وَالغَارِمِينَ وَفي سَبيلِ الّلهِ وَابْنِ السَّبيلِ} (سورة التوبة: الآية: 60) الخ وهو ظاهر غني عن الشرح إلا معرفة الأصناف المذكورة فالفقير في الزكاة هو الذي لا مال له ولا كسب يقع موقعاً من حاجته، أما فقير العرايا فهو من لا نقد بيده، والمسكين من قدر على مال أو كسب يقع كل منهما موقعاً من كفايته، ولا يكفيه كمن يحتاج إلى عشرة دراهم، وعنده سبعة والعامل من استعمله الإمام على أخذ الصدقات ودفعها لمستحقيها،
+<br/><br/>
+والمؤلفة قلوبهم وهم أربعة أقسام: أحدها مؤلفة المسلمين وهو من أسلم، ونيته ضعيفة فيتألف بدفع الزكاة له، وبقية الأقسام مذكورة في المبسوطات. وفي الرقاب وهم المكاتبون كتابة صحيحة، أما المكاتب كتابة فاسدة، فلا يعطى من سهم المكاتبين والغارم على ثلاثة أقسام: أحدها من استدان ديناً لتسكين فتنة بين طائفتين في قتيل لم يظهر قاتله، فتحمل دينه بسبب ذلك، فيقضى دينه من سهم الغارمين غنياً كان أو فقيراً، وإنما يعطى الغارم عند بقاء الدَّين عليه، فإن أداه من ماله أو دفعه ابتداء لم يعط من سهم الغارمين، وبقية أقسام الغارمين في المبسوطات. وأما سبيل الله فهم الغزاة الذين لا سهم لهم في ديوان المرتزقة بل هم متطوعون بالجهاد. وأما ابن السبيل فهو من ينشىء سفراً من بلد الزكاة، أو يكون مجتازاً ببلدها، ويشترط فيه الحاجة وعدم المعصية وقوله (وإلى من يوجد منهم) أي الأصناف فيه إشارة إلى أنه فقد بعض الأصناف، ووجد البعض تصرف لمن وجد، فإن فقدوا كلهم حفظت الزكاة حتى يوجدوا كلهم أو بعضهم
+<br/><br/>
+ولا يقتصر- في إعطاء الزكاة (على أقل من ثلاثة من كل صنف) من الأصناف الثمانية (إلا العامل) فإنه يجوز أن يكون واحداً إن حصلت به الكفاية، وإذا صرف لاثنين من كل صنف غرم للثالث أقل متمول وقيل يغرم له الثلث (وخمسة لا يجوز دفعها) أي الزكاة (إليهم الغني) بمال أو كسب (والعبد وبنو هاشم وبنو المطلب) سواء منعوا حقهم من خمس الخمس أو لا، وكذا عتقاؤهم لا يجوز دفع الزكاة إليهم، ويجوز لكل منهم أخذ صدقة التطوع على المشهور (والكافر) وفي بعض النسخ ولا تصح للكافر (ومن تلزم المزكي نفقته لا يدفعها) أي الزكاة (إليهم باسم الفقراء والمساكين) ويجوز دفعها اليهم باسم كونهم غزاة أو غارمين مثلاً.
+
+</font></div>
+
+<hr><br/>
+
+<b><center>DALIL DASAR PENERIMA ZAKAT</b></center>
+
+
+<p>(Fasal) zakat diberikan kepada delapan golongan yang telah disebutkan oleh Allah Swt di dalam kitab-Nya yang mulia di dalam firman-Nya, “shadaqah hanya di haki oleh orang-orang fakir, orang-orang miskin, orang-orang yang memproses shodaqah, orang-orang yang di lulutkan hatinya, budak, gharim, sabilillah, ibn sabil” ila akhir.</p>
+
+<p>Firman Allah Swt ini telah jelas dan tidak perlu untuk dijelaskan lagi kecuali penjelasan untuk mengetahui golongan-golongan tersebut.</p></br/>
+
+<b><center><i>FAKIR</i></b></center>
+
+<p>Maka orang yang faqir di dalam zakat adalah orang yang tidak memiliki harta dan tidak memiliki pekerjaan yang bisa mencukupi kebutuhannya.</p>
+
+<p>Adapun orang yang faqir di dalam pembahasan araya, maka dia adalah orang yang tidak memiliki nuqud (uang).</p></br/>
+
+<b><center><i>MISKIN</i></b></center>
+
+<p>Miskin adalah orang yang memiliki harta atau pekerjaan, masing-masing dari keduanya sudah agak mencukupi tapi masih kurang, seperti orang yang membutuhkan sepuluh dirham namun dia hanya memiliki tujuh dirham.</p></br/>
+
+<b><center><i>AMIL ZAKAT</i></b></center>
+
+<p>Amil adalah orang yang dipekerjakan oleh imam untuk mengambil sedekah dan menyerahkan pada orang-orang yang berhak menerimanya.</p></br/>
+
+<b><center><i>MUALAF (YANG DILUNAKKAN) HATINYA</i></b></center>
+
+<p>Mualaf qulubuhum, golongan ini ada empat bagian.</p>
+
+<p>Salah satunya adalah muallaf muslimin, yaitu orang yang baru masuk Islam dan niatnya masih lemah di dalam Islam, maka ia dilunakkan dengan memberikan zakat padanya.</p>
+
+<p>Untuk bagian-bagian yang lain dijelaskan di dalam kitab-kitab yang luas pembahasannya.<sup>1</sup> (Lihat: penjelasan Imam Nawawi dalam Kitab Al Majmuk)</p><br/>
+
+<b><center><i>BUDAK MUKATAB</i></b></center>
+
+<p>Wafirriqab, mereka adalah budak-budak mukatab yang melakukan akad kitabah yang sah.</p>
+
+<p>Sedangkan budak mukatab yang melakukan akad kitabah yang tidak sah, maka ia tidak diberi bagian budak-budak mukatab.</p><br/>
+
+<b><center><i>GHARIM (PUNYA HUTANG)</i></b></center>
+
+<p>Gharim ada tiga bagian.</p>
+
+<p>Salah satunya adalah orang yang hutang untuk meredam fitnah di antara dua golongan dalam masalah orang yang terbunuh dan tidak jelas pembunuhnya, maka ia menanggung hutang sebab itu semua.</p>
+
+<p>Maka hutangnya dilunasi dari bagian gharimin, baik ia adalah orang yang kaya atau fakir.</p>
+
+<p>Gharim hanya bisa diberi bagian ketika hutangnya masih ada.</p>
+
+<p>Jika ia telah melunasi hutang dari hartanya sendiri atau telah memberikan hartanya sejak awal, maka ia tidak diberi dari bagian gharimin.
+
+<p>Untuk bagian gharimin yang lain telah dijelaskan di dalam kitab-kitab yang diperluas pembahasannya.<sup>2</sup></p></br/>
+
+<b><center><i>FI SABLILILLAH (MUJAHID)</i></b></center>
+
+<p>Adapun sabilillah, maka mereka adalah para pejuang yang tidak memiliki bagian pasti di dalam buku besar negara, bahkan mereka berjihad suka rela hanya karena Allah Swt.</p><br/>
+
+<b><center><i>IBNU SABIL (MUSAFIR)</i></b></center>
+
+<p>Adapun ibn sabil, maka dia adalah orang yang melakukan perjalanan dari daerah yang sedang memproses zakat, atau melewatinya.</p>
+
+<p>Ibnu sabil disyaratkan harus dalam keadaan membutuhkan dan tidak melakukan kemaksiatan.</p>
+
+<p>Perkataan mushannif “dan di berikan pada orang-orang yang di temukan dari kedelapan golongan” memberi isyarah bahwa sesungguhnya ketika sebagian golongan tidak ada dan yang ada hanya sebagian saja, maka zakat diserahkan pada golongan yang ada.</p>
+
+<p>Jika semuanya tidak ada, maka zakat disimpan dulu hingga semuanya atau sebagian golongan telah ditemukan.</p>
+
+<p>Di dalam menyerahkan zakat, tidak diperkenankan hanya diberikan pada orang yang kurang dari tiga orang dari setiap golongan dari kedelapan golongan tersebut.</p>
+
+<p>Kecuali amil, maka sesungguhnya amil bisa saja hanya satu orang jika memang sudah mencukupi kebutuhan.</p>
+
+<p>Jika zakat hanya diberikan pada dua orang dari setiap golongan, maka wajib memberi ganti rugi dengan minimal barang yang berharga pada orang ketiga.</p>
+
+<p>Ada yang berpendapat, bahwa orang ketiga diberi ganti rugi sepertiga dari yang telah diberikan pada dua orang tersebut.<sup>3</sup></p><br/>
+
+<b><center><u>Golongan Yang Tidak Berhak Menerima Zakat</u></b></center>
+
+<p>Ada lima golongan yang tidak diperkenankan memberikan zakat pada mereka.</p>
+
+<p>Yaitu orang yang kaya dengan harta atau pekerjaan. Dan budak (yang bukan budak mukatab).</p>
+
+<p>Bani Hasyim dan Bani Muthallib. Baik mereka tidak mau menerima haknya dari bagian khumusil khumus, ataupun mau menerima.</p>
+
+<p>Begitu juga budak-budak yang dimerdekakan oleh mereka (Bani Hasyim dan Bani Muthallib), tidak boleh memberikan zakat pada mereka.</p>
+
+<p>Masing-masing dari mereka diperkenankan untuk menerima sedekah sunnah menurut qaul masyhur.</p>
+
+<p>Dan orang kafir. Dalam sebagian redaksi menggunakan bahasa, “tidak sah memberikan zakat pada orang kafir”.</p>
+
+<p>Orang yang wajib dinafkahi oleh orang yang mengeluarkan zakat, maka ia tidak boleh memberikan zakat pada mereka (orang-orang yang dinafkahi) atas nama orang-orang fakir dan miskin.</p>
+
+<p>Dan boleh memberikan zakat pada mereka dengan status semisal mereka adalah para pejuang atau gharim.</p>
+
+</p>
+
+<b><u>Catatan:</u></b><br/>
+<phr>
+<p><sub>1</sub>Empat macam muallaf adalah sebagai berikut (Kifayatul Ahyar juz 1 hal. 199):<br/>
+<ol type="a">
+<li>Orang yang baru masuk Islam dan niat (iman) nya belum kuat.</li>
+<li>Orang yang baru masuk Islam dan niatnya cukup kuat, bahkan ia menjadi pemuka di kalangan kaumnya. la
+diberi zakat dengan harapan kawan-kawannya tertarik masuk Islam.</li>
+<li>Orang Islam yang melindungi kaum muslimin dari gangguan dan keburukan orang-orang kafir.</li>
+<li>Orang Islam yang membela kepentingan kaum muslimin dari muslim yang lain (pemberontak atau
+golongan anti zakat) dan dari orang-orang non Muslim.</li>
+</ol>
+
+<p>Muallaf macam pertama dan kedua boleh diberi zakat secara mutlak.</p>
+<ul>
+<li>Bagian ketiga dan keempat boleh diberi zakat sekiranya mereka diperlukan, misalnya
+guna menghadapi kaum kafir atau pembangkang zakat yang biayanya lebih besar daripada
+menyediakan pasukan bersenjata. Selain itu, mereka harus laki-laki dan yang berhak
+menentukan zakat tersebut adalah Imam, bukan individu orang yang mengeluarkan zakat.</li>
+<li>Golongan muallaf berhak mendapat zakat dengan syarat Islam.</li>
+</ul>
+</p>
+
+<p><sub>2</sub>Ghorim yang berhak menerima zakat terbagi menjadi 3 kelompok:<br/>
+<ol type="a">
+<li>Berhutang Untuk Perdamaian. Orang yang berhutang untuk mendamaikan dua pihak atau lebih yang sedang
+bermusuhan, berhak mendapat zakat apabila harta yang digunakan mendamaikan diperoleh dengan cara hutang
+dan saat pembagian zakat hutang tersebut belum lunas.</li>
+<li>Berhutang Untuk Kemaslahatan. Orang yang berhutang untuk dirinya sendiri atau keluarganya untuk
+kebutuhan yang mubah atau sunnah (tidak untuk maksiat), seperti untuk biaya hidup atau pendidikan, berhak
+mendapat zakat agar digunakan untuk melunasi hutangnya. Begitu juga berhak mendapat zakat, orang yang
+berhutang sedianya untuk kemaksiatan, namun ternyata ditasarufkan untuk perkara mubah atau sunnah, atau
+berhutang untuk maksiat dan ditasarufkan dalam kemaksiatan pula, namun sudah bertaubat dari kemaksiatan
+yang dilakukan.</li>
+<li>Berhutang Untuk Menanggung Hutang Orang Lain. Dimana saat hutang telah jatuh tempo orang yang
+menanggung dan yang ditanggung dalam kondisi tidak mampu melunasi.</li>
+</ol>
+
+
+</p>
+
+
+
+<p><sub>3</sub>Dalam Nihayatuzzain hal. 178 disebutkan:<br/>
+<ul>
+<li>Ibn al-Ajil Al-Yamani berkata: “Ada tiga permasalahan di dalam Zakat yang difatwakan walaupun berselisih
+dengan pendapat madzhab Imam As-SyaGi’i: 1. Bolehnya memindah Zakat (dari daerah zakat), 2. Bolehnya
+membayar zakat satu orang kepada satu orang mustahiq 3. Bolehnya memberikan zakat kepada satu golongan.”
+Beliau mengatakan: “Jika Imam Syafi'i hidup maka ia akan berpendapat seperti itu.”</li>
+<li>Dan segolongan ulama’ lebih memilih pendapat bolehnya membayarkan zakat kepada 3 orang fakir atau
+miskin. Sebagian ulama’ yang lain memilih pendapat yang mengatakan bolehnya memberikan kepada satu
+oranng saja. Bahkan sebagian ulama’ membuat argumen yang panjang untuk membelanya.</li>
+<li>Yang dikendaki dari istilah mustahiq adalah orang yang ada di daerahnya pada waktu itu, meskipun mereka
+bukanlah penduduk asli daerah tersebut. Dan bukan selain dari mereka.</li>
+<li>Tempat wajibnya membayar zakat bila dihubungkan dengan zakat mal adalah tempat dimana harta mencapai
+umur satu tahun. Sedangkan untuk zakat fitrah, maka tempat wajib membayarnya adalah tempat dimana ia
+menemui waktu terbenamnya matahari di akhir hari bulan Ramadan.</li>
+</ul>
+</p>
+</phr>
+
+
+
+
+
+
+<link href="css/pinchzoomer.min.css" rel="stylesheet">
+<link href="css/fullscreen.min.css" rel="stylesheet">
+<script src="js/jquery-1.10.0.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/modernizr.min.js" type="text/javascript"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/jquery.hammer.min.js" type="text/javascript"></script>
+<script src="js/TweenMax.min.js" type="text/javascript"></script>
+<script src="js/fullscreen.min.js" type="text/javascript"></script>
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+</body>
+</html>
